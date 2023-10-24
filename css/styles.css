@@ -663,7 +663,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 288px;
-  max-width: 408px;
 
   background: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -805,6 +804,7 @@ body {
 }
 
 .checkbox_container_icon {
+  position: relative;
   width: 21px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -849,6 +849,11 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
   margin-top: 24px;
+}
+.checkbox_container_icon_name {
+  position: absolute;
+  left: 3px;
+  top: 3px;
 }
 .is_open {
   display: block;
@@ -953,6 +958,12 @@ body {
   }
   .footer_button {
     margin: 0;
+  }
+  .container_modal_window {
+    width: 408px;
+  }
+  .checkbox_container_icon {
+    width: 16px;
   }
 }
 

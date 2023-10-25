@@ -60,7 +60,7 @@ body {
 }
 .mobile_menu {
   padding: 72px 24px 40px 16px;
-  display: none;
+  visibility: hidden;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -284,6 +284,7 @@ body {
   border-radius: 4px;
   margin-bottom: 8px;
   border: 1px solid #8e8f99;
+  width: 100%;
 }
 
 .visually-hidden {
@@ -368,7 +369,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.4px;
   margin-bottom: 8px;
 }
@@ -646,7 +647,7 @@ body {
 }
 
 .modal_window {
-  display: none;
+  visibility: hidden;
   position: fixed;
   width: 100%;
   left: 0;
@@ -663,7 +664,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 288px;
-
   background: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -856,7 +856,9 @@ body {
   top: 3px;
 }
 .is_open {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -967,11 +969,33 @@ body {
   }
 }
 
-@media screen and (min-width: 1158px) {
-  .section_advantages {
-    padding: 120px 0;
+@media screen and (min-width: 1440px) {
+  .address_page_list {
+    flex-direction: row;
+  }
+  .head {
+    padding: 25px 156px;
+  }
+  .address_page_list_contact {
+    font-size: 16px;
   }
 
+  .navigation_list .link:hover::after,
+  .active::after {
+    bottom: -26px;
+  }
+  .main_title_section {
+    padding: 188px 0;
+  }
+  .main_title_section_item {
+    padding-bottom: 48px;
+  }
+  .advantages_icon_container {
+    display: flex;
+  }
+  .container {
+    padding: 120px 0;
+  }
   .two_section_list {
     width: calc((100% - 72px) / 4);
   }
@@ -985,5 +1009,27 @@ body {
 
   .section_list_item_text {
     font-weight: 400;
+  }
+  .portfolio_list {
+    row-gap: 48px;
+  }
+  .portfolio_list_item {
+    width: calc((100% - 48px) / 3);
+  }
+  .footer_container {
+    flex-direction: row;
+    gap: 80px;
+  }
+  .container.footer_container {
+    padding: 100px 0;
+  }
+  .footer-info_block {
+    gap: 120px;
+  }
+  .soc_list_item {
+    margin-top: 0;
+  }
+  .footer_input {
+    opacity: 1;
   }
 }

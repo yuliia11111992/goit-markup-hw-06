@@ -26,7 +26,7 @@
       <a href="./index.html" class="logo" target="_blank"
         >Web<span class="logo_navy">Studio</span>
       </a>
-      <button class="burger-btn" type="menu">
+      <button class="burger-btn" type="button" title="openMenu">
         <svg class="burger" width="24" height="24">
           <use href="./images/icons.svg#icon-solid_menu"></use>
         </svg>
@@ -394,7 +394,11 @@
           <ul class="portfolio_list">
             <li class="portfolio_list_item">
               <div class="app_img">
-                <img src="./images/BankingApp.jpg" alt="Banking App" />
+                <img
+                  srcset="./images/BankingApp.jpg 1x, images/banking2X.jpg 2x"
+                  src="./images/BankingApp.jpg"
+                  alt="Banking App"
+                />
                 <p class="portfolio_text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -409,7 +413,10 @@
             <li class="portfolio_list_item">
               <div class="app_img">
                 <img
-                  src="./images/CashlessPayment.jpg"
+                  srcset="
+                    ./images/CashlessPayment.jpg 1x,
+                    images/cashless2X.jpg        2x
+                  "
                   alt="Cashless Payment"
                 />
                 <p class="portfolio_text">
@@ -425,7 +432,14 @@
             </li>
             <li class="portfolio_list_item">
               <div class="app_img">
-                <img src="./images/MeditationApp.jpg" alt="Meditation App" />
+                <img
+                  srcset="
+                    ./images/MeditationApp.jpg 1x,
+                    images/meditation2X.jpg    2x
+                  "
+                  src="./images/MeditationApp.jpg"
+                  alt="Meditation App"
+                />
                 <p class="portfolio_text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -439,7 +453,11 @@
             </li>
             <li class="portfolio_list_item">
               <div class="app_img">
-                <img src="./images/TaxiService.jpg" alt="Taxi Service" />
+                <img
+                  srcset="./images/TaxiService.jpg 1x, images/taxi2X.jpg 2x"
+                  src="./images/TaxiService.jpg"
+                  alt="Taxi Service"
+                />
                 <p class="portfolio_text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -454,6 +472,10 @@
             <li class="portfolio_list_item">
               <div class="app_img">
                 <img
+                  srcset="
+                    ./images/ScreenIllustrations.jpg 1x,
+                    images/ckreen2X.jpg              2x
+                  "
                   src="./images/ScreenIllustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -473,6 +495,7 @@
             <li class="portfolio_list_item">
               <div class="app_img">
                 <img
+                  srcset="./images/OnlineCourses.jpg 1x, images/online2X.jpg 2x"
                   src="./images/OnlineCourses.jpg"
                   alt="Online Courses"
                   width="360"
@@ -655,5 +678,6 @@
         </form>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

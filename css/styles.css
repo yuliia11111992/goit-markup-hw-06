@@ -154,7 +154,7 @@ body {
 }
 
 .container {
-  max-width: 1128px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 96px 16px;
 }
@@ -329,7 +329,6 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 96px 28px;
 }
 
 .section_team_title {
@@ -420,6 +419,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  margin-bottom: 8px;
 }
 
 /*========section 4 ======*/
@@ -862,6 +862,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
   .head {
     display: block;
   }
@@ -970,6 +973,11 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+  }
   .address_page_list {
     flex-direction: row;
   }

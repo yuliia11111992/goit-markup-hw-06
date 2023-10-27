@@ -974,7 +974,7 @@ body {
 
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px 0 15px;
   }
@@ -1026,7 +1026,6 @@ body {
   }
   .footer_container {
     flex-direction: row;
-    gap: 80px;
   }
   .container.footer_container {
     padding: 100px 0;
